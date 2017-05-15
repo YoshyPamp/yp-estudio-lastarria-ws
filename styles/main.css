@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Condensed:400,700");
+body {
+  padding-top: 50px; }
+
+.starter-template {
+  padding: 40px 15px;
+  text-align: center; }
+
+.navbar-brand {
+  padding: 0; }
+  .navbar-brand img {
+    height: 100%;
+    width: auto;
+    padding-left: 10px; }
+
+.navbar {
+  border-bottom: 1px solid black;
+  padding: 20px 0; }
+
+.nav li {
+  background-color: #6fb34d; }
