@@ -1,29 +1,39 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Condensed:400,700");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700");
 body {
   padding-top: 71px;
-  width: 100%; }
+  width: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px; }
   body .container-fluid {
     margin: 0;
     padding: 0;
     border: 0; }
 
-.navbar-brand {
-  padding: 0;
-  margin-right: 20px; }
-  .navbar-brand img {
-    height: 100%;
-    width: auto;
-    padding-left: 12px; }
-
 .navbar {
   box-shadow: 0px 3px 10px black;
   padding: 10px 0;
   background-color: white; }
+  .navbar .navbar-brand {
+    padding: 0;
+    margin-right: 20px; }
+    .navbar .navbar-brand img {
+      height: 100%;
+      width: auto;
+      padding-left: 12px; }
+  .navbar .nav li {
+    margin: 0 10px;
+    font-size: 18px;
+    color: black;
+    font-weight: 700; }
+    .navbar .nav li:hover {
+      transition: opacity 300ms ease-in-out 1s; }
+  .navbar .logo-social img {
+    width: 25px;
+    height: 25px; }
 
-.nav li {
-  margin: 0 10px;
-  font-size: 18px;
-  color: black; }
+@media screen and (max-width: 960px) {
+  .logo-social {
+    float: left; } }
 
 #home {
   background-image: url("../assets/images/background-woman.jpg");
@@ -32,13 +42,21 @@ body {
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
-  height: 100vh; }
-  #home img {
-    display: block;
-    width: 50%;
-    margin: 0 auto;
-    -webkit-filter: brightness(-200);
-    filter: brightness(-200); }
+  height: 100vh;
+  -webkit-filter: brightness(0.7);
+  filter: brightness(0.7); }
+
+.logo-home {
+  position: absolute;
+  top: 91px;
+  left: 0;
+  right: 0;
+  width: 50%;
+  margin: 0 auto; }
+
+@media (max-width: 960px) {
+  .logo-home {
+    width: 100%; } }
 
 #servicios {
   height: 500px; }
