@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700");
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,700,700i");
 body {
   padding-top: 71px;
   width: 100%;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-size: 16px; }
   body .container-fluid {
     margin: 0;
@@ -23,13 +23,31 @@ body {
   .navbar .nav li {
     margin: 0 10px;
     font-size: 18px;
-    color: black;
-    font-weight: 700; }
+    color: BLACK;
+    font-weight: 400;
+    transition: all 200ms ease-in-out; }
     .navbar .nav li:hover {
-      transition: opacity 300ms ease-in-out 1s; }
+      background-color: gainsboro;
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1); }
+      .navbar .nav li:hover a {
+        color: cadetblue; }
+    .navbar .nav li:hover.logo-social {
+      background: transparent;
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1); }
+      .navbar .nav li:hover.logo-social img {
+        border-radius: 50%;
+        box-shadow: 10px 10px 1px -5px gainsboro;
+        -webkit-transform: translate(-2px, -5px);
+        -ms-transform: translate(-2px, -5px);
+        transform: translate(-2px, -5px); }
   .navbar .logo-social img {
     width: 25px;
-    height: 25px; }
+    height: 25px;
+    transition: all 200ms ease-in-out; }
 
 @media screen and (max-width: 960px) {
   .logo-social {
@@ -54,12 +72,39 @@ body {
   width: 50%;
   margin: 0 auto; }
 
+.lead {
+  position: absolute;
+  top: 500px;
+  color: gainsboro;
+  font-size: 36px; }
+
+.arrow-down {
+  position: absolute;
+  right: 50%;
+  bottom: 100px;
+  margin-left: -50px;
+  display: inline-block;
+  height: 50px;
+  width: 50px; }
+  .arrow-down i {
+    font-size: 50px;
+    text-align: center;
+    color: cadetblue;
+    -webkit-animation-duration: 1.3s;
+    animation-duration: 1.3s; }
+  .arrow-down:hover {
+    cursor: pointer; }
+
 @media (max-width: 960px) {
   .logo-home {
-    width: 100%; } }
+    width: 100%; }
+  .lead {
+    top: 300px;
+    font-size: 24px; } }
 
 #servicios {
-  height: 500px; }
+  height: 500px;
+  border-bottom: 1px solid black; }
 
 #trabajo {
   height: 500px; }
