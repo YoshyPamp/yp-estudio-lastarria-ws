@@ -80,9 +80,9 @@ body {
 
 .arrow-down {
   position: absolute;
-  right: 50%;
+  left: 50%;
   bottom: 100px;
-  margin-left: -50px;
+  margin-left: -20px;
   display: inline-block;
   height: 50px;
   width: 50px; }
@@ -103,8 +103,74 @@ body {
     font-size: 24px; } }
 
 #servicios {
-  height: 500px;
-  border-bottom: 1px solid black; }
+  height: 100%;
+  border-bottom: 1px solid black;
+  text-align: center;
+  padding: 30px 50px; }
+  #servicios h2 {
+    margin: 0;
+    padding-bottom: 30px; }
+  #servicios .servicios {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+    #servicios .servicios .serv-1, #servicios .servicios .serv-2, #servicios .servicios .serv-3 {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      #servicios .servicios .serv-1 .serv-content1, #servicios .servicios .serv-1 .serv-content2, #servicios .servicios .serv-1 .serv-content3, #servicios .servicios .serv-2 .serv-content1, #servicios .servicios .serv-2 .serv-content2, #servicios .servicios .serv-2 .serv-content3, #servicios .servicios .serv-3 .serv-content1, #servicios .servicios .serv-3 .serv-content2, #servicios .servicios .serv-3 .serv-content3 {
+        position: relative;
+        -webkit-align-self: center;
+        -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+        background-image: url(/assets/images/sesion-serv.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 400px;
+        height: 400px;
+        transition: all 300ms ease-in-out; }
+        #servicios .servicios .serv-1 .serv-content1 p, #servicios .servicios .serv-1 .serv-content2 p, #servicios .servicios .serv-1 .serv-content3 p, #servicios .servicios .serv-2 .serv-content1 p, #servicios .servicios .serv-2 .serv-content2 p, #servicios .servicios .serv-2 .serv-content3 p, #servicios .servicios .serv-3 .serv-content1 p, #servicios .servicios .serv-3 .serv-content2 p, #servicios .servicios .serv-3 .serv-content3 p {
+          text-align: justify;
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          color: BLACK;
+          visibility: hidden;
+          transition: visibility 300ms ease-in-out; }
+          #servicios .servicios .serv-1 .serv-content1 p:hover, #servicios .servicios .serv-1 .serv-content2 p:hover, #servicios .servicios .serv-1 .serv-content3 p:hover, #servicios .servicios .serv-2 .serv-content1 p:hover, #servicios .servicios .serv-2 .serv-content2 p:hover, #servicios .servicios .serv-2 .serv-content3 p:hover, #servicios .servicios .serv-3 .serv-content1 p:hover, #servicios .servicios .serv-3 .serv-content2 p:hover, #servicios .servicios .serv-3 .serv-content3 p:hover {
+            visibility: visible; }
+        #servicios .servicios .serv-1 .serv-content1:hover p, #servicios .servicios .serv-1 .serv-content2:hover p, #servicios .servicios .serv-1 .serv-content3:hover p, #servicios .servicios .serv-2 .serv-content1:hover p, #servicios .servicios .serv-2 .serv-content2:hover p, #servicios .servicios .serv-2 .serv-content3:hover p, #servicios .servicios .serv-3 .serv-content1:hover p, #servicios .servicios .serv-3 .serv-content2:hover p, #servicios .servicios .serv-3 .serv-content3:hover p {
+          visibility: visible; }
+      #servicios .servicios .serv-1 .serv-content2, #servicios .servicios .serv-2 .serv-content2, #servicios .servicios .serv-3 .serv-content2 {
+        background-image: url(/assets/images/eventos-serv.jpg); }
+      #servicios .servicios .serv-1 .serv-content3, #servicios .servicios .serv-2 .serv-content3, #servicios .servicios .serv-3 .serv-content3 {
+        background-image: url(/assets/images/camas-serv.jpg); }
+    #servicios .servicios .arrow-serv {
+      font-size: 30px;
+      -webkit-align-self: center;
+      -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center; }
+
+@media (max-width: 1350px) {
+  .servicios {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .servicios .arrow-serv {
+      visibility: hidden; }
+    .servicios .serv-1 .serv-content, .servicios .serv-2 .serv-content, .servicios .serv-3 .serv-content {
+      display: inline; }
+      .servicios .serv-1 .serv-content img, .servicios .serv-2 .serv-content img, .servicios .serv-3 .serv-content img {
+        max-width: 100%;
+        max-height: 100%; } }
 
 #trabajo {
   height: 500px; }
