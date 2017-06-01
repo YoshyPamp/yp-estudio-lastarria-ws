@@ -5,7 +5,7 @@
   padding: 30px 50px
 
   h2
-    margin: 0;
+    margin: 0
     padding-bottom: 30px
 
   .servicios
@@ -14,6 +14,9 @@
     .serv-1,.serv-2,.serv-3
       display: flex
       flex-direction: column
+      box-shadow: 10px 10px 6px 0px hsl(0, 0%, 80%)
+      transition: all 300ms ease-in-out
+      border: 1px solid $scolor
       .serv-content1
         position: relative
         align-self: center
@@ -43,6 +46,9 @@
       .serv-content3
         @extend .serv-content1
         background-image: url(/assets/images/camas-serv.jpg)
+      &:hover
+        transform: translate(-5px,-5px)
+        box-shadow: 15px 15px 6px 0px hsl(0, 0%, 80%)
     .arrow-serv
       font-size: 30px
       align-self: center
