@@ -11,35 +11,25 @@
   .servicios
     display: flex
     justify-content: space-around
+    align-items: center
     .serv-1,.serv-2,.serv-3
       display: flex
       flex-direction: column
       box-shadow: 10px 10px 6px 0px hsl(0, 0%, 80%)
       transition: all 300ms ease-in-out
-      border: 1px solid $scolor
+      max-width: 320px
+      max-height: 450px
       .serv-content1
-        position: relative
         align-self: center
+        width: 400px
+        height: 400px
         background:
           image: url(/assets/images/sesion-serv.jpg)
           repeat: no-repeat
           size: cover
-        width: 400px
-        height: 400px
         transition: all 300ms ease-in-out
-        p
-          text-align: justify
-          position: absolute
-          top: 0px
-          left: 0px
-          color: $pcolor
-          visibility: hidden
-          transition: visibility 300ms ease-in-out
-          &:hover
-            visibility: visible
-        &:hover
-          p
-            visibility: visible
+        margin-bottom: 10px
+        max-width: 320px
       .serv-content2
         @extend .serv-content1
         background-image: url(/assets/images/eventos-serv.jpg)
@@ -47,8 +37,7 @@
         @extend .serv-content1
         background-image: url(/assets/images/camas-serv.jpg)
       &:hover
-        transform: translate(-5px,-5px)
-        box-shadow: 15px 15px 6px 0px hsl(0, 0%, 80%)
+        box-shadow: 15px 15px 6px 0px hsl(0, 0%, 70%)
     .arrow-serv
       font-size: 30px
       align-self: center
