@@ -110,7 +110,6 @@ body {
 
 #servicios {
   height: 100%;
-  border-bottom: 1px solid black;
   text-align: center;
   padding: 30px 50px; }
   #servicios h2 {
@@ -187,14 +186,92 @@ body {
         max-width: 100%;
         max-height: 100%; } }
 
-#trabajo {
-  height: 500px; }
+#trabajos {
+  height: 100%;
+  text-align: center;
+  padding: 30px 50px;
+  color: white;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; }
+  #trabajos h2 {
+    margin: 0;
+    padding-bottom: 30px; }
 
 #valores {
-  height: 500px; }
+  height: 100%;
+  text-align: center;
+  padding: 30px 50px;
+  color: white;
+  background-image: url(/assets/images/contemporary.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; }
+  #valores h2 {
+    margin: 0;
+    padding-bottom: 30px;
+    color: #77859e; }
+  #valores .paquetes {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    #valores .paquetes .pack {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      border: 1px solid gainsboro;
+      background-color: BLACK;
+      margin: 5px;
+      padding: 20px 32px; }
+      #valores .paquetes .pack .precio {
+        font-weight: bold;
+        margin-top: 0;
+        margin-bottom: 15px; }
+      #valores .paquetes .pack .title {
+        background-color: #77859e;
+        padding: 5px 10px;
+        font-size: 25px;
+        border-radius: 10px;
+        margin-bottom: 15px; }
+      #valores .paquetes .pack .desc {
+        list-style: none;
+        padding: 10px 0px;
+        margin: 0;
+        margin-bottom: 15px; }
+        #valores .paquetes .pack .desc li {
+          margin-bottom: 20px; }
+          #valores .paquetes .pack .desc li:last-of-type {
+            margin-bottom: 0px; }
+      #valores .paquetes .pack button {
+        background-color: cadetblue; }
 
 #acercade {
   height: 500px; }
 
 #contacto {
-  height: 500px; }
+  height: 500px;
+  background-color: gainsboro;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; }
