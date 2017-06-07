@@ -4,16 +4,17 @@
   padding: 30px 50px
   color: white
   background:
-    image: url(/assets/images/contemporary.jpg)
+    image: url(../assets/images/contemporary.jpg)
     repeat: no-repeat
     position: center
     size: cover
     attachment: fixed
 
   h2
+    color: $lscolor
+    font-weight: bold
     margin: 0
-    padding-bottom: 30px
-    color: $scolor
+    margin-bottom: 50px
 
   .paquetes
     display: flex
@@ -21,22 +22,33 @@
     flex-wrap: wrap
     .pack
       display: flex
+      position: relative
       flex-direction: column
-      justify-content: space-between
       border: 1px solid $lscolor
       background-color: $pcolor
       margin: 5px
       padding: 20px 32px
+      transition: all 250ms ease-in-out
+      width: 250px
+      &:hover
+        border: 1px solid $accent
+        background-color: white
+        color: $pcolor
+      &:hover .title
+        background-color: $pcolor
+        color: white
       .precio
         font-weight: bold
         margin-top: 0
         margin-bottom: 15px
       .title
-        background-color: $scolor
+        background-color: $lscolor
         padding: 5px 10px
         font-size: 25px
         border-radius: 10px
         margin-bottom: 15px
+        color: $pcolor
+        transition: all 250ms ease-in-out
       .desc
         list-style: none
         padding: 10px 0px

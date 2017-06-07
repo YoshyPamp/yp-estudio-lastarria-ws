@@ -59,6 +59,66 @@ body {
   .logo-social {
     float: left; } }
 
+#footer {
+  height: 100px;
+  background-color: grey;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 10px;
+  text-align: center; }
+
+#return-to-top {
+  position: fixed;
+  bottom: 10%;
+  right: 20px;
+  background: black;
+  background: rgba(0, 0, 0, 0.7);
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  display: none;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+#return-to-top i {
+  color: #fff;
+  margin: 0;
+  position: relative;
+  left: 16px;
+  top: 13px;
+  font-size: 19px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+#return-to-top:hover {
+  background: rgba(0, 0, 0, 0.9); }
+
+#return-to-top:hover i {
+  color: #fff;
+  top: 5px; }
+
 #home {
   background-image: url("../assets/images/background-woman.jpg");
   background-repeat: no-repeat;
@@ -114,7 +174,8 @@ body {
   padding: 30px 50px; }
   #servicios h2 {
     margin: 0;
-    padding-bottom: 30px; }
+    padding-bottom: 30px;
+    font-weight: bold; }
   #servicios .servicios {
     display: -webkit-box;
     display: -webkit-flex;
@@ -150,7 +211,7 @@ body {
         align-self: center;
         width: 400px;
         height: 400px;
-        background-image: url(/assets/images/sesion-serv.jpg);
+        background-image: url(../assets/images/sesion-serv.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         -webkit-transition: all 300ms ease-in-out;
@@ -159,9 +220,9 @@ body {
         margin-bottom: 10px;
         max-width: 320px; }
       #servicios .servicios .serv-1 .serv-content2, #servicios .servicios .serv-2 .serv-content2, #servicios .servicios .serv-3 .serv-content2 {
-        background-image: url(/assets/images/eventos-serv.jpg); }
+        background-image: url(../assets/images/eventos-serv.jpg); }
       #servicios .servicios .serv-1 .serv-content3, #servicios .servicios .serv-2 .serv-content3, #servicios .servicios .serv-3 .serv-content3 {
-        background-image: url(/assets/images/camas-serv.jpg); }
+        background-image: url(../assets/images/camas-serv.jpg); }
       #servicios .servicios .serv-1:hover, #servicios .servicios .serv-2:hover, #servicios .servicios .serv-3:hover {
         -webkit-box-shadow: 15px 15px 6px 0px #b3b3b3;
         box-shadow: 15px 15px 6px 0px #b3b3b3; }
@@ -191,29 +252,32 @@ body {
   text-align: center;
   padding: 30px 50px;
   color: white;
-  background-color: black;
+  background-color: gainsboro;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed; }
   #trabajos h2 {
     margin: 0;
-    padding-bottom: 30px; }
+    padding-bottom: 30px;
+    color: black;
+    font-weight: bold; }
 
 #valores {
   height: 100%;
   text-align: center;
   padding: 30px 50px;
   color: white;
-  background-image: url(/assets/images/contemporary.jpg);
+  background-image: url(../assets/images/contemporary.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed; }
   #valores h2 {
+    color: gainsboro;
+    font-weight: bold;
     margin: 0;
-    padding-bottom: 30px;
-    color: #77859e; }
+    margin-bottom: 50px; }
   #valores .paquetes {
     display: -webkit-box;
     display: -webkit-flex;
@@ -230,29 +294,41 @@ body {
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
+      position: relative;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -webkit-flex-direction: column;
       -ms-flex-direction: column;
       flex-direction: column;
-      -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-      justify-content: space-between;
       border: 1px solid gainsboro;
       background-color: BLACK;
       margin: 5px;
-      padding: 20px 32px; }
+      padding: 20px 32px;
+      -webkit-transition: all 250ms ease-in-out;
+      -o-transition: all 250ms ease-in-out;
+      transition: all 250ms ease-in-out;
+      width: 250px; }
+      #valores .paquetes .pack:hover {
+        border: 1px solid cadetblue;
+        background-color: white;
+        color: BLACK; }
+      #valores .paquetes .pack:hover .title {
+        background-color: BLACK;
+        color: white; }
       #valores .paquetes .pack .precio {
         font-weight: bold;
         margin-top: 0;
         margin-bottom: 15px; }
       #valores .paquetes .pack .title {
-        background-color: #77859e;
+        background-color: gainsboro;
         padding: 5px 10px;
         font-size: 25px;
         border-radius: 10px;
-        margin-bottom: 15px; }
+        margin-bottom: 15px;
+        color: BLACK;
+        -webkit-transition: all 250ms ease-in-out;
+        -o-transition: all 250ms ease-in-out;
+        transition: all 250ms ease-in-out; }
       #valores .paquetes .pack .desc {
         list-style: none;
         padding: 10px 0px;
@@ -266,12 +342,85 @@ body {
         background-color: cadetblue; }
 
 #acercade {
-  height: 500px; }
+  height: 100%;
+  text-align: center;
+  padding: 30px 50px;
+  color: BLACK; }
+  #acercade h2 {
+    color: BLACK;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 50px; }
+  #acercade .acerca {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    #acercade .acerca .our {
+      width: 500px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      padding: 20px;
+      border-left: 5px solid cadetblue;
+      margin-bottom: 20px;
+      margin-right: 20px;
+      background-color: whitesmoke; }
+      #acercade .acerca .our p {
+        text-align: center; }
 
 #contacto {
-  height: 500px;
   background-color: gainsboro;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  height: 100%;
+  padding: 30px 50px;
+  color: BLACK; }
+
+h2 {
+  text-align: center;
+  color: BLACK;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 50px; }
+
+.contacto-form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .contacto-form .form-group {
+    width: 600px; }
+    .contacto-form .form-group label {
+      text-align: left; }
+    .contacto-form .form-group textarea {
+      resize: none;
+      height: 200px; }
+    .contacto-form .form-group button {
+      font-weight: bold; }
