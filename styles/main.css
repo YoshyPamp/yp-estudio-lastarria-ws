@@ -416,7 +416,8 @@ h2 {
   -ms-flex-align: center;
   align-items: center; }
   .contacto-form .form-group {
-    width: 600px; }
+    width: 600px;
+    max-width: 100%; }
     .contacto-form .form-group label {
       text-align: left; }
     .contacto-form .form-group textarea {

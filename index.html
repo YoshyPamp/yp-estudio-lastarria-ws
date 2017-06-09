@@ -415,18 +415,18 @@
     </div>
     <div id="contacto">
       <h2>Contacto</h2>
-      <form class="contacto-form" action="#" method="GET">
+      <form class="contacto-form" action="envio_correo.php" method="POST">
         <div class="form-group">
           <label for="nombre">Nombre</label>
-          <input type="text" class="form-control" id="" placeholder="Ingrese nombre...">
+          <input type="text" name="nombre" class="form-control" placeholder="Ingrese nombre..." required>
         </div>
         <div class="form-group">
           <label for="correo">Correo Electrónico</label>
-          <input type="email" class="form-control" id="" placeholder="Ingrese correo electrónico...">
+          <input type="email" name="correo" class="form-control" placeholder="Ingrese correo electrónico..." required>
         </div>
         <div class="form-group">
           <label for="mensaje">Solicitud</label>
-          <textarea class="form-control" id="" placeholder="Escriba su solicitud..."></textarea>
+          <textarea class="form-control" name="mensaje" placeholder="Escriba su solicitud..." required></textarea>
         </div>
         <div class="form-group">
           <button type="submit" class="btn btn-default btn-lg">Enviar Solicitud</button>
