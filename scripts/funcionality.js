@@ -40,5 +40,43 @@ $(document).ready(function() {
             scrollTop : 0                       // Scroll to top of body
         }, 500);
     });
-
 });
+
+//Funcionalidad ajax para formulario de contacto.
+function validarFormulario(){
+  var nombre = $('#nombre').val();
+  var correo = $('#correo').val();
+  var mensaje = $('#mensaje').val();
+
+  if(nombre != null && correo != null && mensaje != null){
+    $.ajax({
+      url: 'envio_correo.php',
+      type: 'POST',
+      data: {
+        nombre: nombre,
+        correo: correo,
+        mensaje: mensaje
+      }
+    })
+    .done(function(data) {
+      if(data == ""){
+        alert("Formulario de contacto, enviado exitosamente.");
+      }
+    })
+    .fail(function(data) {
+      if(data.status == 500){
+        alert("Oops.. Hubo un problema en el envío del formulario. Favor intentar mas tarde.");
+      }else{
+        if(data.status == 400){
+          alert("Oops.. Al parecer hay problemas con el formulario. Contactar WebMaster.");
+        }else{
+          alert("Oops.. Problema inesperado en envío de formulario. Contactar WebMaster")
+        }
+      }
+    });
+  }else{
+    alert("Debe ingresar todos los campos del formulario.");
+  }
+
+
+}

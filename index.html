@@ -340,21 +340,21 @@
     </div>
     <div id="contacto">
       <h2>Contacto</h2>
-      <form class="contacto-form" action="envio_correo.php" method="POST">
+      <form class="contacto-form">
         <div class="form-group">
           <label for="nombre">Nombre</label>
-          <input type="text" name="nombre" class="form-control" placeholder="Ingrese nombre..." required>
+          <input type="text" id="nombre" class="form-control" placeholder="Ingrese nombre..." required>
         </div>
         <div class="form-group">
           <label for="correo">Correo Electrónico</label>
-          <input type="email" name="correo" class="form-control" placeholder="Ingrese correo electrónico..." required>
+          <input type="email" id="correo" class="form-control" placeholder="Ingrese correo electrónico..." required>
         </div>
         <div class="form-group">
           <label for="mensaje">Solicitud</label>
-          <textarea class="form-control" name="mensaje" placeholder="Escriba su solicitud..." required></textarea>
+          <textarea class="form-control" id="mensaje" placeholder="Escriba su solicitud..." required></textarea>
         </div>
         <div class="form-group">
-          <button type="submit" class="btn btn-default btn-lg">Enviar Solicitud</button>
+          <button type="button" class="btn btn-default btn-lg" onclick="validarFormulario()">Enviar Solicitud</button>
         </div>
       </form>
     </div>
