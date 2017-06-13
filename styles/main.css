@@ -1,0 +1,427 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,700,700i");
+body {
+  padding-top: 71px;
+  width: 100%;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 16px; }
+  body .container-fluid {
+    margin: 0;
+    padding: 0;
+    border: 0; }
+
+.navbar {
+  -webkit-box-shadow: 0px 3px 10px black;
+  box-shadow: 0px 3px 10px black;
+  padding: 10px 0;
+  background-color: white; }
+  .navbar .navbar-brand {
+    padding: 0;
+    margin-right: 20px; }
+    .navbar .navbar-brand img {
+      height: 100%;
+      width: auto;
+      padding-left: 12px; }
+  .navbar .nav li {
+    margin: 0 10px;
+    font-size: 18px;
+    color: BLACK;
+    font-weight: 400;
+    -webkit-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out; }
+    .navbar .nav li:hover {
+      background-color: gainsboro;
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1); }
+      .navbar .nav li:hover a {
+        color: cadetblue; }
+    .navbar .nav li:hover.logo-social {
+      background: transparent;
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1); }
+      .navbar .nav li:hover.logo-social img {
+        border-radius: 50%;
+        -webkit-box-shadow: 10px 10px 1px -5px gainsboro;
+        box-shadow: 10px 10px 1px -5px gainsboro;
+        -webkit-transform: translate(-2px, -5px);
+        -ms-transform: translate(-2px, -5px);
+        transform: translate(-2px, -5px); }
+  .navbar .logo-social img {
+    width: 25px;
+    height: 25px;
+    -webkit-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out; }
+
+@media screen and (max-width: 960px) {
+  .logo-social {
+    float: left; } }
+
+#footer {
+  height: 100px;
+  background-color: grey;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 10px;
+  text-align: center; }
+
+#return-to-top {
+  position: fixed;
+  bottom: 10%;
+  right: 20px;
+  background: black;
+  background: rgba(0, 0, 0, 0.7);
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  display: none;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+#return-to-top i {
+  color: #fff;
+  margin: 0;
+  position: relative;
+  left: 16px;
+  top: 13px;
+  font-size: 19px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+#return-to-top:hover {
+  background: rgba(0, 0, 0, 0.9); }
+
+#return-to-top:hover i {
+  color: #fff;
+  top: 5px; }
+
+#home {
+  background-image: url("../assets/images/background-woman.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+  -webkit-filter: brightness(0.7);
+  filter: brightness(0.7); }
+
+.logo-home {
+  position: absolute;
+  top: 91px;
+  left: 0;
+  right: 0;
+  width: 50%;
+  margin: 0 auto; }
+
+.lead {
+  position: absolute;
+  top: 500px;
+  color: gainsboro;
+  font-size: 36px; }
+
+.arrow-down {
+  position: absolute;
+  left: 50%;
+  bottom: 100px;
+  margin-left: -20px;
+  display: inline-block;
+  height: 50px;
+  width: 50px; }
+  .arrow-down i {
+    font-size: 50px;
+    text-align: center;
+    color: cadetblue;
+    -webkit-animation-duration: 1.3s;
+    animation-duration: 1.3s; }
+  .arrow-down:hover {
+    cursor: pointer; }
+
+@media (max-width: 960px) {
+  .logo-home {
+    width: 100%; }
+  .lead {
+    top: 300px;
+    font-size: 24px; } }
+
+#servicios {
+  height: 100%;
+  text-align: center;
+  padding: 30px 50px; }
+  #servicios h2 {
+    margin: 0;
+    padding-bottom: 30px;
+    font-weight: bold; }
+  #servicios .servicios {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    #servicios .servicios .serv-1, #servicios .servicios .serv-2, #servicios .servicios .serv-3 {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-shadow: 10px 10px 6px 0px #cccccc;
+      box-shadow: 10px 10px 6px 0px #cccccc;
+      -webkit-transition: all 300ms ease-in-out;
+      -o-transition: all 300ms ease-in-out;
+      transition: all 300ms ease-in-out;
+      max-width: 320px;
+      max-height: 450px; }
+      #servicios .servicios .serv-1 .serv-content1, #servicios .servicios .serv-1 .serv-content2, #servicios .servicios .serv-1 .serv-content3, #servicios .servicios .serv-2 .serv-content1, #servicios .servicios .serv-2 .serv-content2, #servicios .servicios .serv-2 .serv-content3, #servicios .servicios .serv-3 .serv-content1, #servicios .servicios .serv-3 .serv-content2, #servicios .servicios .serv-3 .serv-content3 {
+        -webkit-align-self: center;
+        -ms-flex-item-align: center;
+        align-self: center;
+        width: 400px;
+        height: 400px;
+        background-image: url(../assets/images/sesion-serv.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-transition: all 300ms ease-in-out;
+        -o-transition: all 300ms ease-in-out;
+        transition: all 300ms ease-in-out;
+        margin-bottom: 10px;
+        max-width: 320px; }
+      #servicios .servicios .serv-1 .serv-content2, #servicios .servicios .serv-2 .serv-content2, #servicios .servicios .serv-3 .serv-content2 {
+        background-image: url(../assets/images/eventos-serv.jpg); }
+      #servicios .servicios .serv-1 .serv-content3, #servicios .servicios .serv-2 .serv-content3, #servicios .servicios .serv-3 .serv-content3 {
+        background-image: url(../assets/images/camas-serv.jpg); }
+      #servicios .servicios .serv-1:hover, #servicios .servicios .serv-2:hover, #servicios .servicios .serv-3:hover {
+        -webkit-box-shadow: 15px 15px 6px 0px #b3b3b3;
+        box-shadow: 15px 15px 6px 0px #b3b3b3; }
+    #servicios .servicios .arrow-serv {
+      font-size: 30px;
+      -webkit-align-self: center;
+      -ms-flex-item-align: center;
+      align-self: center; }
+
+@media (max-width: 1350px) {
+  .servicios {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .servicios .arrow-serv {
+      visibility: hidden; }
+    .servicios .serv-1 .serv-content, .servicios .serv-2 .serv-content, .servicios .serv-3 .serv-content {
+      display: inline; }
+      .servicios .serv-1 .serv-content img, .servicios .serv-2 .serv-content img, .servicios .serv-3 .serv-content img {
+        max-width: 100%;
+        max-height: 100%; } }
+
+#trabajos {
+  height: 100%;
+  text-align: center;
+  padding: 30px 50px;
+  color: white;
+  background-color: gainsboro;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; }
+  #trabajos h2 {
+    margin: 0;
+    padding-bottom: 30px;
+    color: black;
+    font-weight: bold; }
+
+#valores {
+  height: 100%;
+  text-align: center;
+  padding: 30px 50px;
+  color: white;
+  background-image: url(../assets/images/contemporary.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; }
+  #valores h2 {
+    color: gainsboro;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 50px; }
+  #valores .paquetes {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    #valores .paquetes .pack {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      position: relative;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      border: 1px solid gainsboro;
+      background-color: BLACK;
+      margin: 5px;
+      padding: 20px 32px;
+      -webkit-transition: all 250ms ease-in-out;
+      -o-transition: all 250ms ease-in-out;
+      transition: all 250ms ease-in-out;
+      width: 250px; }
+      #valores .paquetes .pack:hover {
+        border: 1px solid cadetblue;
+        background-color: white;
+        color: BLACK; }
+      #valores .paquetes .pack:hover .title {
+        background-color: BLACK;
+        color: white; }
+      #valores .paquetes .pack .precio {
+        font-weight: bold;
+        margin-top: 0;
+        margin-bottom: 15px; }
+      #valores .paquetes .pack .title {
+        background-color: gainsboro;
+        padding: 5px 10px;
+        font-size: 25px;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        color: BLACK;
+        -webkit-transition: all 250ms ease-in-out;
+        -o-transition: all 250ms ease-in-out;
+        transition: all 250ms ease-in-out; }
+      #valores .paquetes .pack .desc {
+        list-style: none;
+        padding: 10px 0px;
+        margin: 0;
+        margin-bottom: 15px; }
+        #valores .paquetes .pack .desc li {
+          margin-bottom: 20px; }
+          #valores .paquetes .pack .desc li:last-of-type {
+            margin-bottom: 0px; }
+      #valores .paquetes .pack button {
+        background-color: cadetblue; }
+
+#acercade {
+  height: 100%;
+  text-align: center;
+  padding: 30px 50px;
+  color: BLACK; }
+  #acercade h2 {
+    color: BLACK;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 50px; }
+  #acercade .acerca {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    #acercade .acerca .our {
+      width: 500px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      padding: 20px;
+      border-left: 5px solid cadetblue;
+      margin-bottom: 20px;
+      margin-right: 20px;
+      background-color: whitesmoke; }
+      #acercade .acerca .our p {
+        text-align: center; }
+
+#contacto {
+  background-color: gainsboro;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  padding: 30px 50px;
+  color: BLACK; }
+
+h2 {
+  text-align: center;
+  color: BLACK;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 50px; }
+
+.contacto-form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .contacto-form .form-group {
+    width: 600px;
+    max-width: 100%; }
+    .contacto-form .form-group label {
+      text-align: left; }
+    .contacto-form .form-group textarea {
+      resize: none;
+      height: 200px; }
+    .contacto-form .form-group button {
+      font-weight: bold; }

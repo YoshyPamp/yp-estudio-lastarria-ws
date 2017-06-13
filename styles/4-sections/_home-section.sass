@@ -1,0 +1,48 @@
+#home
+
+  background-image: url('../assets/images/background-woman.jpg')
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  background-attachment: fixed
+  width: 100%
+  height: 100vh
+  filter: brightness(0.7)
+
+.logo-home
+  position: absolute
+  top: 91px
+  left: 0
+  right: 0
+  width: 50%
+  margin: 0 auto
+
+.lead
+  position: absolute
+  top: 500px
+  color: $lscolor
+  font-size: $shfonts
+
+.arrow-down
+  position: absolute
+  left: 50%
+  bottom: 100px
+  margin-left: -20px
+  display: inline-block
+  height: 50px
+  width: 50px
+  i
+    font-size: 50px
+    text-align: center
+    color: $accent
+    animation-duration: 1.3s
+  &:hover
+    cursor: pointer
+
+
+@media (max-width: 960px)
+  .logo-home
+    width: 100%
+  .lead
+    top: 300px
+    font-size: $nshfonts
