@@ -12,7 +12,7 @@
   if($nombre == "" || $correo == "" || $body == ""){
     echo "Error: Faltan datos para el envío de correo.";
   }else{
-    $to      = 'joshe.sonido@gmail.com';
+    $to      = 'reservas@estudiolastarria.cl';
     $subject = 'Envío de Contacto Web Estudio Lastarria';
     $message = "Nombre: ".$nombre."
 "."Correo Electrónico: ".$correo."
